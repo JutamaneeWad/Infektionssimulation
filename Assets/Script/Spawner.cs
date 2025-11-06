@@ -8,7 +8,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for (var i = 0; i < 5; i++)
+        for (var i = 0; i < 30; i++)
         {
             Instantiate(Spawner.transform, new Vector3(i * 0, -5f, 0), Quaternion.identity);
         }
@@ -19,4 +19,5 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         
     }
+    
 }

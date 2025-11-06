@@ -5,6 +5,9 @@ public class Infection : MonoBehaviour
     private SpriteRenderer sr;
     public int unitCondition;
 
+    // Initialize with RGB
+    Color Colorgreen = new Color(203f, 255f, 90f);
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +20,7 @@ public class Infection : MonoBehaviour
     {
         if(unitCondition == 0)
         {
-            sr.color = Color.green;
+            sr.color = Colorgreen;
         }
         if(unitCondition == 1)
         {
