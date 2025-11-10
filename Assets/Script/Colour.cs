@@ -6,13 +6,21 @@ public class Infection : MonoBehaviour
     public int unitCondition;
 
     // Initialize with RGB
-    Color Colorgreen = new Color(203f, 255f, 90f);
+    public Color Colorgreen = new Color(50f, 25f, 90f);
+    public Color Coloryellow = new Color(255f, 249f, 90f);
+    public Color Colorred = new Color(166f, 32f, 55f);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
 
+        int diceRoll = Random.Range(0, 50);
+
+        if (diceRoll < 10)
+        {
+            unitCondition = 1;
+        }
     }
 
     // Update is called once per frame
@@ -20,7 +28,7 @@ public class Infection : MonoBehaviour
     {
         if(unitCondition == 0)
         {
-            sr.color = Colorgreen;
+            sr.color = Color.green;
         }
         if(unitCondition == 1)
         {
@@ -28,7 +36,7 @@ public class Infection : MonoBehaviour
         }
         if (unitCondition == 2)
         {
-            sr.color = Color.red;
+            sr.color = Colorred;
         }
         if (unitCondition == 3)
         {
