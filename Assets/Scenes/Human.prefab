@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d4a1388a0d4ee9c44bcaa86e463a7b39, type: 3}
-  m_Color: {r: 0.60410964, g: 0.8679245, b: 0.2251691, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitCondition: 0
-  Colorgreen: {r: 50, g: 25, b: 90, a: 1}
-  Coloryellow: {r: 255, g: 249, b: 90, a: 1}
-  Colorred: {r: 166, g: 32, b: 55, a: 1}
+  Colorgreen: {r: 0.6928781, g: 0.8773585, b: 0.34349412, a: 1}
+  Coloryellow: {r: 0.7830189, g: 0.7279171, b: 0.05540227, a: 1}
+  Colorred: {r: 0.3207547, g: 0.037824843, b: 0.08703002, a: 1}
+  Colorblack: {r: 0, g: 0, b: 0, a: 1}

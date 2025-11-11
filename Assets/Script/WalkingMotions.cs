@@ -4,20 +4,20 @@ public class WalkingMotions : MonoBehaviour
 { 
     public Vector3 Target;
     public string condition = "Healthy";
-    Color human_color = Color.green;
+
     SpriteRenderer human_Sprite;
 
     public GameObject projectile;
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
 
-    Color greenColr = new Color(203f, 255f, 90f);
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         human_Sprite = GetComponent<SpriteRenderer>();
-        human_Sprite.color = Color.green;
+        
+
+
 
     }
 
@@ -35,6 +35,8 @@ public class WalkingMotions : MonoBehaviour
         {
             nextFire = Time.time; 
         }
+
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
