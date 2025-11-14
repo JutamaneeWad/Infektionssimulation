@@ -10,21 +10,18 @@ public class WalkingMotions : MonoBehaviour
     public GameObject projectile;
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
+    public float humanSpeed = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         human_Sprite = GetComponent<SpriteRenderer>();
-        
-
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Target, 3f * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, Target, humanSpeed * Time.deltaTime);
 
         if (transform.position == Target )
         {
@@ -35,8 +32,6 @@ public class WalkingMotions : MonoBehaviour
         {
             nextFire = Time.time; 
         }
-
-
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

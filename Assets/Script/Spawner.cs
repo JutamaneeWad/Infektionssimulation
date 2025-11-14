@@ -9,7 +9,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     int diceRoll;
     public int numberOfHumans;
     public int initialDiseaseChance;
-    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,10 +24,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             {
                 humanInstance.GetComponent<Infection>().unitCondition = 1;
             }
-            
         }
-
-        
     }
 
     // Update is called once per frame
